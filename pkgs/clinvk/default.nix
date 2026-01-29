@@ -16,6 +16,9 @@ buildGoModule rec {
 
   vendorHash = "sha256-mVSH+lVn6NavaScayx2DEgnKbRV1nC5LansdCwABV/k=";
 
+  # Tests require writable home directory, skip in sandbox
+  doCheck = false;
+
   ldflags = [
     "-s" "-w"
     "-X github.com/signalridge/clinvoker/internal/app.version=${version}"
