@@ -7,6 +7,7 @@ Nix User Repository packages maintained by SignalRidge.
 ## Packages
 
 - **clinvk** - Unified AI CLI wrapper for multiple backends (Claude, Codex, Gemini)
+- **sing-box** - [sing-box](https://github.com/SagerNet/sing-box) with local dependency patches (F5 BIG-IP SAML login and VPN options parsing for the OpenConnect endpoint). Synced from [signalridge/sing-box-patches](https://github.com/signalridge/sing-box-patches) on each of its releases; change it there, not here. The overlay replaces nixpkgs' `sing-box`.
 
 ## Usage
 
